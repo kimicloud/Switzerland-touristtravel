@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destination</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="h-screen w-screen bg-cover bg-center" style="background-image: url('bg1.jpeg')">
+    <div class="h-full w-full p-8 bg-black bg-opacity-30">
+        <div class="max-w-7xl mx-auto flex flex-col h-full">
+            <!-- Navigation bars -->
+            <div class="flex justify-between mb-2 mt-10">
+                <div class="bg-white rounded-2xl mr-4 shadow flex items-center p-3 w-2/3">
+                    <button class="p-2 text-black"><i class="fas fa-plane"></i></button>
+                    <div class="flex-grow"></div>
+                    <button class="bg-transparent border-2 border-black text-black px-4 py-1 rounded-full hover:bg-black hover:text-white transition-all duration-300">New destination</button>
+                    <button class="ml-4 text-black">Search</button>
+                    <button class="ml-4 text-black mr-2">Tours</button>
+                </div>
+                <div class="bg-white rounded-2xl shadow flex items-center p-3 w-1/3">
+                    <button class="p-2 text-gray-600"><i class="fas fa-bars"></i></button>
+                    <button class="ml-4 text-gray-600"><i class="fas fa-bell"></i></button>
+                    <div class="w-8 h-8 bg-blue-600 rounded-full ml-auto"></div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="flex space-x-4 mt-2 flex-grow my-10">
+                <!-- Left card (Switzerland) -->
+                <div class="relative bg-black bg-opacity-50 bg-cover bg-center border border-opacity-50 border-white rounded-3xl p-6 text-white flex-grow h-8/9 w-2/3" style="background-image: url('bg1.jpeg');">
+                    <div class="absolute top-10 left-6 right-6 flex items-center"> 
+                        <div class="flex-1">
+                            <h2 class="text-2xl font-bold flex items-center text-black">
+                                <img src="flag.png" alt="Switzerland Flag" class="w-4 h-6 ml-8 mr-1">                                 
+                                <span>Switzerland</span>
+                                <div class="flex items-center ml-1">
+                                    <div class="w-8 h-8 border-2 border-black rounded-full flex items-center justify-center mr-2 hover:bg-black hover:text-white transition-all duration-300">
+                                        <i class="fas fa-arrow-left text-lg"></i>
+                                    </div>
+                                    <i class="fas fa-arrow-right text-lg  mr-8 hover:bg-black hover:text-white transition-all duration-300"></i>
+                                </div>
+                            </h2>
+                        </div>
+                        <div class="h-0.5 bg-black mx-4" style="width: 450px;"></div> 
+                        <div class="flex-1 flex justify-end">
+                            <span class="text-3xl font-bold text-black ml-2">01<span class="text-lg text-gray-500 mr-8">/03</span></span>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-4 left-8 right-8 px-6 pb-6">
+                        <div class="flex justify-between items-end">
+                            <div>
+                                <div class="flex-1 flex justify-end">
+                                    <span class="text-3xl font-bold text-white">★ 4.86 <span class="text-3xl text-gray-300">/ 5.00</span></span>
+                                </div>
+                                <div class="w-34 h-1 bg-gray-500 mt-2 mb-1">
+                                    <div class="w-3/4 h-full bg-gray-100"></div>
+                                </div>
+                                <div class="flex items-center my-5">
+                                    <i class="fas fa-user mr-2"></i><span class="text-sm">Airbnb's reviewers</span>
+                                </div>
+                                <div class="flex mt-2">
+                                    <img src="profile.png" alt="Avatar" class="w-8 h-8 rounded-full border-2 border-black">
+                                    <img src="profile.png" alt="Avatar" class="w-8 h-8 rounded-full border-2 border-black -ml-2">
+                                    <img src="profile.png" alt="Avatar" class="w-8 h-8 rounded-full border-2 border-black -ml-2">
+                                    <div class="w-8 h-8 rounded-full border-2 border-black -ml-2 bg-purple-500 flex items-center justify-center text-xs">+3</div>
+                                </div>
+                            </div>
+                            <div class="my-4 flex justify-center">
+                                <div class="w-3/4 h-1 bg-white"></div>
+                            </div>
+                            <!-- New transparent white line -->
+                            <!-- Horizontal transparent white line -->
+                           <div class="absolute top-0 left-0 right-0 h-px bg-white bg-opacity- flex items-center " style="width: 900px;" style="margin-top: -40px;" style="margin-right: -40px;">
+                              <div class="flex-grow h-px bg-white bg-opacity-20"></div>
+                                 <div class="w-1/2 h-px bg-transparent"></div>
+                            </div>
+                                 <div class="absolute top-0 bottom-0 left-1/2 w-px bg-white bg-opacity-20 h-50" style="margin-top: -40px;"></div>
+                            <div class="text-left">
+                                <div class="text-3xl font-bold mb-2 text-white">Places in Switzerland</div>
+                                <div class="text-sm mb-2 text-left ">
+                                    <i class="fas fa-heart mr-2"></i> Voted by Roam®️ 
+                                    <i class="fas fa-globe ml-2 mr-1"></i> 112k visitors
+                                </div>
+                                <div class="flex flex-wrap justify-start gap-2">
+                                    <button class="px-2 py-1 bg-transparent border-2 border-white text-white rounded-full text-sm hover:bg-white hover:text-black transition-all duration-300">Zurich</button>
+                                    <button class="px-2 py-1 bg-transparent border-2 border-white text-white rounded-full text-sm hover:bg-white hover:text-black transition-all duration-300">Interlaken</button>
+                                    <button class="px-2 py-1 bg-transparent border-2 border-white text-white rounded-full text-sm hover:bg-white hover:text-black transition-all duration-300">Zermatt</button>
+                                    <button class="px-2 py-1 bg-transparent border-2 border-white text-white rounded-full text-sm hover:bg-white hover:text-black transition-all duration-300">Geneva</button>
+                                </div>
+                                <div class="flex flex-wrap justify-start gap-2 mt-2">
+                                    <button class="px-2 py-1 bg-transparent border-2 border-white text-white rounded-full text-sm hover:bg-white hover:text-black transition-all duration-300">Bern</button>
+                                    <button class="px-2 py-1 bg-transparent border-2 border-white text-white rounded-full text-sm hover:bg-white hover:text-black transition-all duration-300">Lucerne</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right column -->
+                <div class="w-1/3 space-y-4 flex flex-col">
+                    <!-- Take a Break card -->
+                    <div class="bg-white rounded-3xl p-6 shadow-lg w-full flex-grow bg-cover bg-center flex flex-col justify-between" style="background-image: url('bg2.jpeg')">
+                        <div>
+                            <h2 class="text-7xl font-bold mb-3 p-4 text-black">Take a <br> Break</h2>
+                            <p class="text-2xl text-gray-600 mx-4 mb-10">Indulge in the freedom of exploration with effortless booking platform.</p>
+                        </div>
+                        <button class="w-1/2 bg-transparent border-2 border-black text-black my-8 py-3 px-2 rounded-full flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300">
+                            Explore new places
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+
+                    <!-- Where card -->
+                    <div class="bg-white rounded-3xl p-6 shadow-lg w-full h-1/3">
+                        <h2 class="text-4xl font-bold mb-4 text-black">Where</h2>
+                        <input type="text" placeholder="Search destination" class="w-full px-4 py-2 border border-gray-300 rounded-full mb-4 hover:opacity-75 transition-opacity duration-300">
+                        <br>
+                        <button class="w-full bg-black border-2 border-black text-white py-3 px-1 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300">
+                            Start your search
+                            <i class="fas fa-search ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
